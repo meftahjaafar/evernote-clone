@@ -42,10 +42,10 @@ const NoteItem = ({ note }) => {
           {moment(note.createdAt.toDate()).fromNow()}
       </p>
       <div className="right-align">
-        <i className="material-icons" style={{ cursor: "pointer" }}>
+        <Link to={`/note/edit/${note.id}`} className="material-icons" style={{ cursor: "pointer" }}>
           {" "}
           edit{" "}
-        </i>
+        </Link>
       </div>
     </div>
   );

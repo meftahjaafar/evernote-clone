@@ -4,6 +4,8 @@ import Navbar from "./components/layout/Navbar";
 import Home from "./components/home/Home";
 import FavoriteItem from "./components/notes/FavoriteItem";
 import NoteDetail from "./components/notes/NoteDetail";
+import EditForm from "./components/notes/EditForm";
+
 function App() {
   return (
     <Router>
@@ -12,6 +14,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/favorites" component={FavoriteItem} />
         <Route exact path="/note/:id" component={NoteDetail} />
+        <Route exact path="/note/edit/:id" component={EditForm} />
       </Switch>
     </Router>
 
