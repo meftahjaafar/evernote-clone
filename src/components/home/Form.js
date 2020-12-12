@@ -4,6 +4,7 @@ import useInput from "../../customhook/useInput";
 const Form = () => {
     const [title, bindTitle, resetTitle]= useInput();
     const [content, bindContent, resetContent]= useInput();
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log({title, content});

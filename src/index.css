@@ -17,6 +17,10 @@ code {
   margin-left: 15px;
 }
 
+#nav-mobile{
+  margin-right: 50px;
+}
+
 form{
   padding: 20px;
   margin: 60px 20px;
