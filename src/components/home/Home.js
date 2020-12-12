@@ -1,5 +1,6 @@
 import React from "react";
 import Form from "./Form";
+import NotesList from "../notes/NotesList";
 import { useSelector } from "react-redux";
 import { useFirestoreConnect } from "react-redux-firebase";
 
@@ -15,7 +16,9 @@ const Home = () => {
         <div className="col s7">
           <Form />
         </div>
-        <div className="col s5">Note List</div>
+        <div className="col s5">
+          <NotesList notes={notes} />
+        </div>
       </div>
     </div>
   );
